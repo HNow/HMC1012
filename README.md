@@ -22,7 +22,7 @@ This project is a website which will be made using html, css, and javascript to 
 - Game page
 - User interactivity 
 - Differing visual styles for the game page from which the user can choose
-- About page telling the user about the game
+- About page informing the user about the game
 - Leaderboard to track wins in a row
 - Wins per session tracked on game page
 - Appealing visual buttons to interact with the game
