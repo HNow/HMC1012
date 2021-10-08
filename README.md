@@ -28,6 +28,7 @@ This project is a website which will be made using html, css, and javascript to 
 - Visual buttons to interact with the gamen ( rock,paper,scissors) 
 - Animations/popups for winning and losing at the end of a round
 - A player versus player mdoe will be avaiable on the game page
+- User choice and server choice will be displayed when deciding a round winner
 
 
 
