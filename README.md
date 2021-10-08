@@ -1,6 +1,8 @@
 # HMC1012
 Hisham Nasir, hishamn@my.yorku.ca, Section B, Lab 3
+
 Mohammed Mawi, mawi17@my.yorku.ca, Section B, Lab 3
+
 Catherine Tighe, cat03@my.yorku.ca, Section B, Lab 3
 
 
