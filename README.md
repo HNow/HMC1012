@@ -4,9 +4,8 @@ Mohammed Mawi, mawi17@my.yorku.ca, Section B, Lab 3
 Catherine Tighe, cat03@my.yorku.ca, Section B, Lab 3
 
 
-
-Phase 0
 Project Name: Rock, Paper, Scissors 
+
 Team Name: HMC
 
 # Project Description
