@@ -18,15 +18,16 @@ This project is a website which will be made using html, css, and javascript to 
 
 - Coded in HTML, CSS, Javascript
 - Usage of ReactJS and NodeJS
-- Homepage
-- Game page
+- Homepage where the leaderboard will be displayed 
+- Game page where the user can play the game
 - User interactivity 
-- Differing visual styles for the game page from which the user can choose
+- Differing visual styles for the game page from which the user can choose through buttons on the homepage
 - About page informing the user about the game
-- Leaderboard to track wins in a row
+- Leaderboard on homepage to track wins in a row
 - Wins per session tracked on game page
-- Appealing visual buttons to interact with the game
-- Animations for winning and losing a round
+- Visual buttons to interact with the gamen ( rock,paper,scissors) 
+- Animations/popups for winning and losing at the end of a round
+- A player versus player mdoe will be avaiable on the game page
 
 
 
