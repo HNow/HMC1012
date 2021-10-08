@@ -18,12 +18,12 @@ This project is a website which will be made using html, css, and javascript to 
 
 - Coded in HTML, CSS, Javascript
 - Usage of ReactJS and NodeJS
-Homepage
-Game page
-Differing visual styles for the game page from which the user can choose
-About page telling the user about the game
-Leaderboard to track wins in a row
-Wins per session tracked on game page
+- Homepage
+- Game page
+- Differing visual styles for the game page from which the user can choose
+- About page telling the user about the game
+- Leaderboard to track wins in a row
+- Wins per session tracked on game page
 
 
 
