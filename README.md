@@ -24,6 +24,8 @@ This project is a website which will be made using html, css, and javascript to 
 - About page telling the user about the game
 - Leaderboard to track wins in a row
 - Wins per session tracked on game page
+- Appealing visual buttons to interact with the game
+- Animations for winning and losing a round
 
 
 
