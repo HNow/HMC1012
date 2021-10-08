@@ -16,8 +16,8 @@ This project is a website which will be made using html, css, and javascript to 
 
 # Functional Requirements
 
-- Homepage where the leaderboard will be displayed 
-- Game page where the user can play the game
+- Homepage where the leaderboard will be displayed on the right hand side of the screen and where the centered play button will be. 
+- Game page where the user can play the game 
 - Differing visual styles for the game page from which the user can choose through buttons on the homepage
 - About page informing the user about the game
 - Leaderboard on homepage to track wins in a row
