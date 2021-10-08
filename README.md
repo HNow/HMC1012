@@ -16,8 +16,8 @@ This project is a website which will be made using html, css, and javascript to 
 
 # Functional Requirements
 
-Coded in HTML, CSS, Javascript
-Usage of ReactJS and NodeJS
+- Coded in HTML, CSS, Javascript
+- Usage of ReactJS and NodeJS
 Homepage
 Game page
 Differing visual styles for the game page from which the user can choose
