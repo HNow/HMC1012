@@ -21,7 +21,7 @@ This project is a website which will be made using html, css, and javascript to 
 - Differing visual styles for the game page from which the user can choose through buttons on the homepage
 - About page informing the user about the game
 - Leaderboard on homepage to track wins in a row
-- Wins per session tracked on game page
+- Wins per session tracked on game page through a number 
 - Visual buttons to interact with the game (rock,paper,scissors) 
 - Animations/popups for winning and losing at the end of a round
 - A player versus player mdoe will be avaiable on the game page and can be activated through a button
