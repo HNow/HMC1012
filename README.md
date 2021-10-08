@@ -26,6 +26,7 @@ This project is a website which will be made using html, css, and javascript to 
 - Wins per session tracked on game page
 - Appealing visual buttons to interact with the game
 - Animations for winning and losing a round
+- The use of wireframes and visual design
 
 
 
