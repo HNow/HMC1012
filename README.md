@@ -16,8 +16,6 @@ This project is a website which will be made using html, css, and javascript to 
 
 # Functional Requirements
 
-- Coded in HTML, CSS, Javascript
-- Usage of ReactJS and NodeJS
 - Homepage where the leaderboard will be displayed 
 - Game page where the user can play the game
 - User interactivity 
