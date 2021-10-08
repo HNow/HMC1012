@@ -20,6 +20,7 @@ This project is a website which will be made using html, css, and javascript to 
 - Usage of ReactJS and NodeJS
 - Homepage
 - Game page
+- User interactivity 
 - Differing visual styles for the game page from which the user can choose
 - About page telling the user about the game
 - Leaderboard to track wins in a row
@@ -27,6 +28,7 @@ This project is a website which will be made using html, css, and javascript to 
 - Appealing visual buttons to interact with the game
 - Animations for winning and losing a round
 - The use of wireframes and visual design
+
 
 
 
