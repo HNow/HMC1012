@@ -29,7 +29,7 @@ This project is a website which will be made using html, css, and javascript to 
 
 # Project Design
 
-
+![WIREFRAME IMAGE] (https://github.com/HNow/HMC1012/blob/main/ProjectDesign/wireframes.png)
 
 
 
