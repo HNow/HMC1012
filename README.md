@@ -27,6 +27,8 @@ This project is a website which will be made using html, css, and javascript to 
 - A player versus player mdoe will be avaiable on the game page and can be activated through a button
 - User choice and server choice will be displayed when deciding a round winner
 
+# Project Design
+
 
 
 
