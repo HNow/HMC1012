@@ -1,4 +1,108 @@
-.body{
- background-color: rgb(158, 158, 158);
+body{
+    background-color: rgb(158, 158, 158);
     
+}
+#title{
+
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#aboutCont{
+
+text-align: center;
+width: 1000px;
+height: 750px;
+background-color: darkslategrey;
+border-radius: 12px;
+
+}
+#contain{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonHere{
+
+height: 250px;
+width: 250px;
+border-radius:100% ;
+display: block;
+background-color: rgb(54, 54, 54);
+border: none;
+color: whitesmoke;
+font-size: 34px;
+transition: all 0.3s ease-in-out;
+}
+
+#buttonHere:hover {
+    
+    border-color: rgb(197, 197, 197);
+    border-style: solid;
+    border-width: 4px;
+    transform: scale(0.8);
+
+}
+
+#aboutPageButtonCont{
+
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+
+}
+
+#aboutPageRedirect{
+
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgb(54, 54, 54);
+    font-size: 23px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#aboutPageRedirect:hover {
+    transform: scale(0.8);
+    border-color: rgb(197, 197, 197);
+    border-style: solid;
+    border-width: 4px;
+}
+
+#leaderBoard{
+    border-radius: 8px;
+    background-color: rgb(50, 56, 66);
+    height: 400px;
+    width: 250px;
+    float: right;
+    text-decoration: underline;
+    color: white;
+    padding: 15px;
+}
+
+#lBoardTitle{
+    text-align: center;
+}
+
+#playerName{
+    float: left;
+    text-decoration: underline;
+}
+#topScore{
+    float: right;
+    text-decoration: underline;
+}
+
+#leaderBoardCont{
+position: fixed;
+    top: 1%;
+    right: 1%;
 }
