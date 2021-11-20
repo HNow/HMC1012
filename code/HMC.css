@@ -18,8 +18,10 @@ width: 1000px;
 height: 750px;
 background-color: darkslategrey;
 border-radius: 12px;
+color: white;
 
 }
+
 #contain{
     display: flex;
     flex-wrap: wrap;
