@@ -12,8 +12,11 @@ function homeRedirect(){
 
 var roundCount=0;
 var result=0;
+//
 var playerScore=0;
+//tracks player score
 var serverScore=0;
+//tracks server score
 var countToWinner=0;
 //this variable decides how many rounds the game will be out of ^
 
@@ -24,11 +27,8 @@ function processChoice(n){
     $.post(
         url+'?data='+JSON.stringify({
         
-        'playChoice':n, 
-        'playerScore':playerScore, 
-        'serverScore':serverScore,
-        'result':result,
-        'roundCount':roundCount
+        'playChoice':n
+        
         }),
         response);
     }
@@ -45,86 +45,17 @@ var response = JSON.parse(data);
     var roundCounter=response['roundCount'];
     var serverChoice=response['serverChoice'];
     var playerChoice=response['playerChoice'];
+    var roundWinner=response['alertTextForWin'];
+    var playerSB=response['playerSB'];
+    var serverSB=response['serverSB'];
 
 
-var roundWinner=resultCheck(win,playerChoice,serverChoice);
+//alerts the user of who won the round and what each side chose
 alert(roundWinner);
 
-    }
-
-
-function resultCheck(a,playerChoice,serverChoice){
-
-
-    if (a==-1){
-
-        return("You picked "+playerChoice+ " and the server picked "+serverChoice+". You lose");
-    }
-
-    else if (a==1){
-
-        return("You picked "+playerChoice+ " and the server picked "+serverChoice+". You Win!");
+//alters the scoreboard on screen to reflect best of 3 match wins
+document.getElementById("scoreTrack").innerHTML="Player: "+playerSB+" Server: "+serverSB;
 
     }
-
-    else{
-
-        return("You picked "+playerChoice+ " and the server picked "+serverChoice+". Its a draw!");
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var url = "http://localhost:3000/post";
-// var boolT=true;
-// function test(){
-
-//     $.post(url+'?data='+JSON.stringify({
-//         'val':"boolT" 
-//         }),
-// response);
-
-// }
-
-// function response(data){
-//     var response = JSON.parse(data);
-
-//     var keykey=response['key'];
-
-
-//     if(keykey==false){
-
-//         alert("FALSE");
-//     }
-
-//     else if (keykey==true){
-
-//         alert("TRUE");
-//     }
-
-// }
-
-
-
-
-
 
 
