@@ -108,3 +108,86 @@ position: fixed;
     top: 1%;
     right: 1%;
 }
+
+#gameButtons{
+
+position: relative;
+border-style: solid;
+border-color: black;
+}
+
+#gameButtonsChild{
+
+    width: 500px;
+    height: 500px;
+    border-style: solid;
+    border-color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -250px;
+   
+
+
+}
+
+#rock,#paper,#scissors{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius:100% ;
+    display: block;
+    background-color: rgb(54, 54, 54);
+    border: none;
+    color: whitesmoke;
+    font-size: 34px;
+    transition: all 0.3s ease-in-out;
+}
+
+#rock{
+position: absolute;
+top:-25%;
+right:25%;
+
+
+}
+
+#paper{
+
+position: absolute;
+top:75%;
+left:-25%;
+}
+
+#scissors{
+position: absolute;
+right: -25%;
+top:75%;
+}
+
+
+#scoreTrack{
+text-align: center;
+vertical-align: middle;
+line-height: 500px;
+font-size:30px;
+
+}
+
+#rock:hover{
+border-style: transparent;
+border-radius: 20px;
+    
+}
+
+#scissors:hover{
+    border-style: transparent;
+    border-radius: 20px;
+        
+    }
+
+#paper:hover{
+    border-style: transparent;
+    border-radius: 20px;
+            
+    }

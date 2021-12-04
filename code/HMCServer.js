@@ -1,0 +1,133 @@
+
+var codes = {}; // an empty JS object, later it's going to store the code for each end-user
+
+
+
+var winState=0;
+var playerScore=0;
+var roundCount=0;
+var serverScore=0;
+
+const { request } = require('express')
+var express = require('express');
+var app = express();
+
+
+app.post('/post', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    console.log("New express client");
+    console.log("Received: ");
+    console.log(JSON.parse(req.query['data']));
+    var z = JSON.parse(req.query['data']);
+    var serverChoice=Math.floor(Math.random() * 3);
+
+    if (z['playChoice']== serverChoice){
+        winState=0;
+      //result value of 0 is a tie
+    roundCount++;
+    console.log(z);
+    }
+//all conditions below are for when the player wins
+//if they are not met it is assumed that they lost
+else if(z['playChoice']==0&&serverChoice==1){
+    winState=1;
+    playerScore++;
+    roundCount++;
+    console.log(z);
+}
+
+
+else if(z['playChoice']==2&&serverChoice==0){
+
+    winState=1;
+    playerScore++;
+    roundCount++;
+    console.log(z);
+}
+
+
+else if(z['playChoice']==1&&serverChoice==2){
+    winState=1;
+    playerScore++;
+    roundCount++;
+    console.log(z);
+}
+
+else{
+
+    winState=-1;
+serverScore++;
+roundCount++;
+console.log(z);
+}
+
+var serverChoiceText=toRPS(serverChoice);
+var playerChoiceText=toRPS(z['playChoice']);
+
+
+
+var jsontext = JSON.stringify({
+    /*TODO 3 ... type of action */
+    /*TODO 4 ... won or not */
+    /*TODO 5 ... number of match*/
+    /*TODO 6 ... number of correct colors*/
+    /*TODO 7 ... number of wrong colors*/
+    /*TODO 8 ... the answer code when the game ends*/
+    //'action':'evaluate', 'win':win, 'num_match':num_match,'num_containing':num_containing,'num_not_in':num_not_in, 'code':answer
+        'result':winState, 
+        'playerScore':playerScore,
+        'roundCount':roundCount, 
+        'serverScore': serverScore,
+        'serverChoice': serverChoiceText,
+        'playerChoice': playerChoiceText
+});
+console.log(jsontext);
+res.end(jsontext);
+
+}).listen(3000);
+console.log("Server is running!");
+
+function toRPS(a){
+
+if(a==0){
+
+    return("Rock");
+
+}
+
+else if(a==1){
+    return("Scissors");
+
+}
+
+else {
+
+    return("Paper");
+
+}
+
+}
+
+// const { request } = require('express');
+// var express = require('express');
+// var app = express();
+
+
+// app.post('/post', (req, res) => {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     console.log("New express client");
+//     console.log("Received: ");
+//     console.log(JSON.parse(req.query['data']));
+//     var z = JSON.parse(req.query['data']);
+
+
+//     var jsontext = JSON.stringify({
+//     'key':false    
+        
+//     });
+// res.send(jsontext);
+
+//   }).listen(3000);
+
+// console.log("Server running");
+
