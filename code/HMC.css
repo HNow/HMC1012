@@ -120,8 +120,8 @@ border-color: black;
 
     width: 500px;
     height: 500px;
-    border-style: solid;
-    border-color: azure;
+    /* border-style: solid;
+    border-color: azure; */
     position: absolute;
     top: 50%;
     left: 50%;
