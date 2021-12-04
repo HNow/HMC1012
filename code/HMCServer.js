@@ -1,5 +1,4 @@
 
-var codes = {}; // an empty JS object, later it's going to store the code for each end-user
 
 
 
@@ -67,14 +66,7 @@ var playerChoiceText=toRPS(z['playChoice']);
 
 
 var jsontext = JSON.stringify({
-    /*TODO 3 ... type of action */
-    /*TODO 4 ... won or not */
-    /*TODO 5 ... number of match*/
-    /*TODO 6 ... number of correct colors*/
-    /*TODO 7 ... number of wrong colors*/
-    /*TODO 8 ... the answer code when the game ends*/
-    //'action':'evaluate', 'win':win, 'num_match':num_match,'num_containing':num_containing,'num_not_in':num_not_in, 'code':answer
-        'result':winState, 
+    'result':winState, 
         'playerScore':playerScore,
         'roundCount':roundCount, 
         'serverScore': serverScore,
@@ -108,26 +100,4 @@ else {
 
 }
 
-// const { request } = require('express');
-// var express = require('express');
-// var app = express();
-
-
-// app.post('/post', (req, res) => {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     console.log("New express client");
-//     console.log("Received: ");
-//     console.log(JSON.parse(req.query['data']));
-//     var z = JSON.parse(req.query['data']);
-
-
-//     var jsontext = JSON.stringify({
-//     'key':false    
-        
-//     });
-// res.send(jsontext);
-
-//   }).listen(3000);
-
-// console.log("Server running");
 
