@@ -73,7 +73,7 @@ var countToWinner=0;
 
 var url = "http://localhost:3000/post";
 
-if(playMode==1){
+//if(playMode==1){
 
 
 function processChoice(n){
@@ -114,13 +114,5 @@ document.getElementById("scoreTrack").innerHTML="Player: "+playerSB+" Server: "+
 
     }
 
-}
-
-else {
 
 
-
-   
-
-   
-}
