@@ -9,6 +9,57 @@ function homeRedirect(){
     window.location.href = "homepage.html";
 }
 
+function greenTheme(){
+   document.body.style.backgroundImage = "url('images/greenBG.svg')" ;
+   document.body.style.backgroundSize="cover";
+   document.getElementById("rock").style.backgroundColor="#C3C57F";
+   document.getElementById("scissors").style.backgroundColor="#C3C57F";
+   document.getElementById("paper").style.backgroundColor="#C3C57F";
+   document.getElementById("aboutPageRedirect").style.backgroundColor="#C3C57F";
+}
+
+function blueTheme(){
+    document.body.style.backgroundImage = "url('images/blueBG.svg')" ;
+    document.body.style.backgroundSize="cover";
+    document.getElementById("rock").style.backgroundColor="#363636";
+    document.getElementById("scissors").style.backgroundColor="#363636";
+    document.getElementById("paper").style.backgroundColor="#363636";
+    document.getElementById("aboutPageRedirect").style.backgroundColor="#363636";
+}
+
+function mochaTheme(){
+    document.body.style.backgroundImage = "url('images/mochaBG.svg')" ;
+    document.body.style.backgroundSize="cover";
+    document.getElementById("rock").style.backgroundColor="#24141c";
+    document.getElementById("scissors").style.backgroundColor="#24141c";
+    document.getElementById("paper").style.backgroundColor="#24141c";
+    document.getElementById("aboutPageRedirect").style.backgroundColor="#24141c";
+}
+
+var playMode;
+//tracks single vs two player modes
+
+function twoP(){
+
+playMode=2;
+document.getElementById("scoreTrack").innerHTML="Player One: 0 Player Two: 0";
+console.log(playMode);
+document.getElementById('twoPlayer').style.display="none";
+document.getElementById('onePlayer').style.display="block";
+
+
+}
+
+function oneP(){
+
+    playMode=1;
+    document.getElementById("scoreTrack").innerHTML="Player One: 0 Server: 0";
+    console.log(playMode);
+    document.getElementById('twoPlayer').style.display="block";
+    document.getElementById('onePlayer').style.display="none";
+
+}
+
 
 var roundCount=0;
 var result=0;
@@ -22,6 +73,9 @@ var countToWinner=0;
 
 var url = "http://localhost:3000/post";
 
+if(playMode==1){
+
+
 function processChoice(n){
 
     $.post(
@@ -32,6 +86,8 @@ function processChoice(n){
         }),
         response);
     }
+
+
 
     function response(data){
 //result value of 0 is a tie, -1 is a loss, 1 is a win
@@ -58,4 +114,13 @@ document.getElementById("scoreTrack").innerHTML="Player: "+playerSB+" Server: "+
 
     }
 
+}
 
+else {
+
+
+
+   
+
+   
+}

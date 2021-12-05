@@ -171,6 +171,8 @@ text-align: center;
 vertical-align: middle;
 line-height: 500px;
 font-size:30px;
+font-family: Arial, Helvetica, sans-serif;
+color: seashell;
 
 }
 
@@ -191,3 +193,93 @@ border-radius: 20px;
     border-radius: 20px;
             
     }
+
+    #themeButtons{
+
+        position: fixed;
+        bottom: 1%;
+        left: 92%;
+
+    }
+
+    #blue,#green,#mocha{
+
+        width: 50px;
+        height: 50px;
+        
+        border: none;
+        color: white;
+        background-color: rgb(54, 54, 54);
+        font-size: 23px;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    #blue{
+        background: url(images/blueButton.svg) no-repeat; background-size: cover; width:45px; height:45px; border:none;
+    }
+    #green{
+        background: url(images/greenButton.svg) no-repeat; background-size: cover; width:45px; height:45px; border:none;
+    }
+    #mocha{
+        background: url(images/mochaButton.svg) no-repeat; background-size: cover; width:45px; height:45px; border:none;
+    }
+
+     body{
+
+        background: url(images/blueBG.svg) no-repeat; background-size: cover;  border:none;
+
+    } 
+
+    #twoPlayer{
+
+
+        position: fixed;
+        bottom: 12%;
+        left: 94%;
+        height: 45px;
+        width: 100px;
+        border-radius: 30px;
+        display: block;
+        background-color: rgb(54, 54, 54);
+        border: none;
+        color: whitesmoke;
+        font-size: 14px;
+        transition: all 0.3s ease-in-out;
+    }
+        
+        #twoPlayer:hover {
+            
+            border-color: rgb(197, 197, 197);
+            border-style: solid;
+            border-width: 4px;
+            transform: scale(0.9);
+        
+        }
+
+        #onePlayer{
+
+
+            position: fixed;
+            bottom: 12%;
+            left: 94%;
+            height: 45px;
+            width: 100px;
+            border-radius: 30px;
+            display: block;
+            background-color: rgb(54, 54, 54);
+            border: none;
+            color: whitesmoke;
+            font-size: 14px;
+            transition: all 0.3s ease-in-out;
+            display: none;
+        }
+            
+            #onePlayer:hover {
+                
+                border-color: rgb(197, 197, 197);
+                border-style: solid;
+                border-width: 4px;
+                transform: scale(0.9);
+            
+            }

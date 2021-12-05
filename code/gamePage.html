@@ -7,16 +7,16 @@
   <script src="HMC.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body id=gameBody>
 
 
 <div id="gameButtonsParent"> 
 
 <div id="gameButtonsChild">
 
-  <button id=rock onclick="processChoice(0)"> Rock</button>
-  <button id=scissors onclick="processChoice(1)"> Scissors </button>
-  <button id=paper onclick="processChoice(2)"> Paper</button>
+  <button  id=rock onclick="processChoice(0)"> Rock</button>
+  <button  id=scissors onclick="processChoice(1)"> Scissors </button>
+  <button  id=paper onclick="processChoice(2)"> Paper</button>
   
 <p id=scoreTrack> Player: 0 Server: 0</p>
 
@@ -30,6 +30,21 @@
 <div id=aboutPageButtonCont>  
     <button id="aboutPageRedirect" onclick="homeRedirect()"> Back </button>
     </div>
+
+    <div id= themeButtons> 
+<button id="blue" onclick="blueTheme()"> </button>
+<button id="green" onclick="greenTheme()"> </button>
+<button id="mocha" onclick="mochaTheme()"> </button>
+
+    </div>
+
+<div id=multiSwitch> 
+
+<button id="twoPlayer" onclick="twoP()"> Two Players</button>
+<button id="onePlayer" onclick="oneP()"> One Player</button>
+
+
+</div>
 
 
 
