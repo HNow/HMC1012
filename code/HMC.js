@@ -1,5 +1,6 @@
 function playRedirect(){
     window.location.href = "gamePage.html";
+    var playerName = prompt("What is your name?");
 }
 function aboutRedirect(){
     window.location.href = "aboutpage.html";
@@ -114,5 +115,7 @@ document.getElementById("scoreTrack").innerHTML="Player: "+playerSB+" Server: "+
 
     }
 
+function leaderboard() {
 
-
+    
+}
