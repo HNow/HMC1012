@@ -132,6 +132,7 @@ border-color: black;
 
 }
 
+
 #rock,#paper,#scissors{
     height: 250px;
     width: 250px;
@@ -144,6 +145,7 @@ border-color: black;
     font-size: 34px;
     transition: all 0.3s ease-in-out;
 }
+
 
 #rock{
 position: absolute;
@@ -174,8 +176,17 @@ line-height: 500px;
 font-size:30px;
 font-family: Arial, Helvetica, sans-serif;
 color: seashell;
-
 }
+
+#submitScore {
+    text-align: center;
+    vertical-align: middle;
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(121, 118, 118);
+        
+}
+
 
 #rock:hover{
 border-style: transparent;
